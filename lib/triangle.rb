@@ -12,6 +12,8 @@ class Triangle
   def validTriangle
     if (@sideA <= 0 && @sideB <= 0 && @sideC <= 0) || (@sideA + @sideB <= @sideC || @sideA + @sideC <= @sideB || @sideB + @sideC <= @sideA)
       false
+    else
+      true
     end
   end
 
