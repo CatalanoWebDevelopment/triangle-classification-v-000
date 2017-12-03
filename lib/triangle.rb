@@ -18,11 +18,11 @@ class Triangle
   def kind
     if validTriangle != true
       raise TriangleError
-    elsif validTriangle == true && @sideA == @sideB && @sideB == @sideC
+    elsif @sideA == @sideB && @sideB == @sideC
       :equilateral
-    elsif validTriangle == true && @sideA == @sideB && @sideA != @sideC || @sideA == @sideC && @sideA != @sideB || @sideB == @sideC && @sideB != @sideA
+    elsif @sideA == @sideB && @sideA != @sideC || @sideA == @sideC && @sideA != @sideB || @sideB == @sideC && @sideB != @sideA
       :isosceles
-    elsif validTriangle == true && @sideA != @sideB && @sideB != @sideC
+    elsif @sideA != @sideB && @sideB != @sideC
       :scalene
     end
   end
