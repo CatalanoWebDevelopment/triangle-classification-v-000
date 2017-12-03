@@ -19,11 +19,7 @@ class Triangle
 
   def kind
     if validTriangle != true
-      begin
       raise TriangleError
-    rescue TriangleError => error
-      error.message
-    end
     elsif @sideA == @sideB && @sideB == @sideC
       :equilateral
     elsif @sideA == @sideB && @sideA != @sideC || @sideA == @sideC && @sideA != @sideB || @sideB == @sideC && @sideB != @sideA
