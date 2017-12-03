@@ -31,7 +31,7 @@ class Triangle
       :scalene
     end
   end
-binding.pry
+  
 end
 
 class TriangleError < StandardError
