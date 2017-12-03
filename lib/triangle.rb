@@ -26,6 +26,8 @@ class Triangle
       :equilateral
     elsif validTriangle == true && @sideA == @sideB && @sideA != @sideC || @sideA == @sideC && @sideA != @sideB || @sideB == @sideC && @sideB != @sideA
       :isosceles
+    elsif validTriangle == true && @sideA != @sideB && @sideB != @sideC
+      :scalene
     end
   end
 
