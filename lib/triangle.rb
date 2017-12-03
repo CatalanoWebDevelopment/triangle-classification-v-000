@@ -14,7 +14,7 @@ class Triangle
       false
     else
       true
-    endx
+    end
   end
 
   def kind
