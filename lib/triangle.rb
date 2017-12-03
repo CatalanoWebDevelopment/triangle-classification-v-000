@@ -16,7 +16,7 @@ class Triangle
   end
 
   def kind
-    if true && @sideA == @sideB && @sideB == @sideC
+    if valid && @sideA == @sideB && @sideB == @sideC
       :equilateral
     # elsif @sideA == @sideB && @sideB
     end
