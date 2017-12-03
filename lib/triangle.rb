@@ -30,7 +30,6 @@ class Triangle
       :scalene
     end
   end
-  binding.pry
 
 end
 
