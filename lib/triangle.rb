@@ -16,10 +16,17 @@ class Triangle
   end
 
   def kind
-    if validTriangle != true && @sideA != @sideB && @sideB != @sideC
-      
+    if validTriangle != true
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
+    elsif validTriangle == true && @sideA == @sideB && @sideB == @sideC
       :equilateral
-    # elsif @sideA == @sideB && @sideB
+    end
+      
+          
     end
   end
 
