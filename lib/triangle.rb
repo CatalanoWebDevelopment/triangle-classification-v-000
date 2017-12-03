@@ -10,7 +10,7 @@ class Triangle
   end
 
   def validTriangle
-    if @sideA > 0 && @sideB > 0 && @sideC > 0 && ((@sideA + @sideB) > @sideC || (@sideA + @sideC) > @sideB || (@sideB + @sideC) > @sideA)
+    if @sideA > 0 && @sideB > 0 && @sideC > 0 && ((@sideA + @sideB) >= @sideC || (@sideA + @sideC) >= @sideB || (@sideB + @sideC) >= @sideA)
       true
     end
   end
