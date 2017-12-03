@@ -22,7 +22,6 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-      binding.pry
     elsif validTriangle == true && @sideA == @sideB && @sideB == @sideC
       :equilateral
     elsif validTriangle == true && @sideA == @sideB && @sideA != @sideC || @sideA == @sideC && @sideA != @sideB || @sideB == @sideC && @sideB != @sideA
@@ -30,6 +29,7 @@ class Triangle
     elsif validTriangle == true && @sideA != @sideB && @sideB != @sideC
       :scalene
     end
+    binding.pry
   end
 
 end
