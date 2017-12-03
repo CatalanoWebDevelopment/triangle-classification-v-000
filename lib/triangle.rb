@@ -24,6 +24,8 @@ class Triangle
       end
     elsif validTriangle == true && @sideA == @sideB && @sideB == @sideC
       :equilateral
+    elsif validTriangle == true && @sideA == @sideB && @sideA != @sideC || @sideA == @sideC && @sideA != @sideB || @sideB == @sideC && @sideB != @sideA
+      :isosceles
     end
   end
 
