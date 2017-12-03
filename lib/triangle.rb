@@ -29,10 +29,12 @@ class Triangle
     end
   end
 
-  class TriangleError < StandardError
-    def message
-      "You must input a valid triangle; sides must be greater than zero and the sum of two sides must be larger than the value of the third."
-    end
-  end
 
+
+end
+
+class TriangleError < StandardError
+  def message
+    "You must input a valid triangle; sides must be greater than zero and the sum of two sides must be larger than the value of the third."
+  end
 end
