@@ -9,7 +9,7 @@ class Triangle
     @sideC = sideC
   end
 
-  def true
+  def valid
     if @sideA > 0 && @sideB > 0 && @sideC > 0
       true
     end
