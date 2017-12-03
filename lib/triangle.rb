@@ -25,9 +25,6 @@ class Triangle
     elsif validTriangle == true && @sideA == @sideB && @sideB == @sideC
       :equilateral
     end
-      
-          
-    end
   end
 
   class TriangleError < StandardError
