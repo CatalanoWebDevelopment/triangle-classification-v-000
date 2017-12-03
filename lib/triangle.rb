@@ -29,8 +29,8 @@ class Triangle
     elsif validTriangle == true && @sideA != @sideB && @sideB != @sideC
       :scalene
     end
-    binding.pry
   end
+  binding.pry
 
 end
 
