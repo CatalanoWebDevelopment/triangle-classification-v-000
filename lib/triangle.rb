@@ -9,14 +9,14 @@ class Triangle
     @sideC = sideC
   end
 
-  def valid
+  def validTriangle
     if @sideA > 0 && @sideB > 0 && @sideC > 0
       true
     end
   end
 
   def kind
-    if valid && @sideA == @sideB && @sideB == @sideC
+    if validTriangle && @sideA == @sideB && @sideB == @sideC
       :equilateral
     # elsif @sideA == @sideB && @sideB
     end
