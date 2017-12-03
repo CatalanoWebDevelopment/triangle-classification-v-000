@@ -2,7 +2,6 @@ require 'pry'
 
 class Triangle
   attr_accessor :equilateral, :isosceles, :scalene
-  extend TriangleError
 
   def initialize(sideA, sideB, sideC)
     @sideA = sideA
