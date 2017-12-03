@@ -21,5 +21,5 @@ class Triangle
     # elsif @sideA == @sideB && @sideB
     end
   end
-  
+
 end
